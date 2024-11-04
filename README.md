@@ -9,7 +9,7 @@ You can install packages, copy configuration files, etc. with this command:
 bash <(curl -s https://raw.githubusercontent.com/STERN3L/my_arch/refs/heads/main/install_arch_hyprland.sh)
 ```
 
-# Manusally Installation
+# Manually Installation
 
 ```
 https://github.com/STERN3L/my_arch.git
