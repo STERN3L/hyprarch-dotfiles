@@ -1,0 +1,44 @@
+" Activer la coloration syntaxique
+syntax on
+
+" Configuration des options de l'affichage
+set number
+set linebreak
+set showbreak=+++
+set textwidth=80
+set showmatch
+set errorbells
+" set visualbell
+
+" Recherche
+nnoremap / /\v
+vnoremap / /\v
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+map <leader><space> :let @/=''<cr> " clear search
+
+" Caractères spéciaux d'affichage
+set list
+set listchars=tab:>-,eol:❳
+set listchars=space:-,tab:>-,eol:❳
+
+" Indentation spécifique pour les fichiers .c et .h
+" set expandtab
+" set shiftwidth=4
+" set softtabstop=4
+
+autocmd FileType c,cpp setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=4
+
+set smartindent
+
+" Autres options d'affichage
+set ruler
+set showtabline=2
+
+" Historique et retour arrière
+set undolevels=1000
+set backspace=indent,eol,start
+
