@@ -94,8 +94,8 @@
   },
 
   "clock": {
-    "format": "<b>{:%I:%M %p }</b>",
-    "format-alt": "<b>{:%a.%d,%b}</b>",
+    "format": "<b><span color='#ffead3'>{:%I:%M %p }</span></b>",
+    "format-alt": "<b><span color='#ffead3'>{:%a.%d,%b}</span></b>",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },
 
