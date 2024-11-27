@@ -5,6 +5,8 @@ You can install packages, copy configuration files, etc. with this command:
 
 # Direct Installation
 
+Note: With direct installation, you can install the various packages required, but you must use manual installation to copy the configuration files automatically. 
+
 ```
 bash <(curl -s https://raw.githubusercontent.com/STERN3L/my_arch/refs/heads/main/install_arch_hyprland.sh)
 ```
