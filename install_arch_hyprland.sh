@@ -82,6 +82,12 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     cp -R zsh/zshrc ~/.zshrc
 fi
 
+read -n1 -rep '[?] Would you to install additional packages? (y,n)' CFG
+if [[ $CFG == "Y" || $CFG == "y" ]]; then
+    echo -e "Installing packages...\n"
+    pacman -S sof-firmware pulseaudio
+fi
+
 ### Script is done ###
 echo -e "[!] Script had completed.\n"
 echo -e "[!] You can start Hyprland by typing Hyprland (note the capital H).\n"
