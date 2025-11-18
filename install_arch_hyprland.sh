@@ -64,6 +64,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     cp -R config/waybar ~/.config/
     cp -R config/swaylock ~/.config/
     cp -R config/wofi ~/.config/
+    cp -R config/swappy ~/.config/
     chmod +x ~/.config/hypr/xdg-portal-hyprland
     chmod +x ~/.config/waybar/scripts/waybar-wttr.py
     chmod +x ~/.config/waybar/Waybar-3.0/scripts/window-name.sh
