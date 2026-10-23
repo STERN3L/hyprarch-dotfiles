@@ -1,4 +1,4 @@
-# my_arch
+# HyprArch - Dotfiles
 
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=archlinux&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/Hyprland-0.54-58E1FF)
