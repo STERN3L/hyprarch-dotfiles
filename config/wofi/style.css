@@ -1,76 +1,58 @@
+/* Application launcher — Catppuccin Macchiato palette */
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+}
+
 window {
-    margin: 0px;
-    border: 5px solid #1e1e2e;
-    background-color: #cdd6f4;
-    border-radius: 15px;
+  margin: 0;
+  border: 2px solid #c6a0f6;
+  border-radius: 14px;
+  background-color: #24273a;
 }
 
 #input {
-    padding: 4px;
-    margin: 4px;
-    padding-left: 20px;
-    border: none;
-    color: #cdd6f4;
-    font-weight: bold;
-    background-color: #1e1e2e;
-    background: ;
-   	outline: none;
-    border-radius: 15px;
-    margin: 10px;
-    margin-bottom: 2px;
+  margin: 10px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  color: #cad3f5;
+  background-color: #363a4f;
+  outline: none;
 }
+
 #input:focus {
-    border: 0px solid #1e1e2e;
-    margin-bottom: 0px;
+  border: 1px solid #8aadf4;
 }
 
-#inner-box {
-    margin: 4px;
-    border: 10px solid #1e1e2e;
-    color: #cdd6f4;
-    font-weight: bold;
-    background-color: #1e1e2e;
-    border-radius: 15px;
-}
-
+#inner-box,
 #outer-box {
-    margin: 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: #1e1e2e;
+  margin: 4px 8px;
+  border: none;
+  background-color: transparent;
 }
 
 #scroll {
-    margin-top: 5px;
-    border: none;
-    border-radius: 15px;
-    margin-bottom: 5px;
-    /* background: rgb(255,255,255); */
-}
-
-#img:selected {
-    background-color: #89b4fa;
-    border-radius: 15px;
-}
-
-#text:selected {
-    color: #cdd6f4;
-    margin: 0px 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: #89b4fa;
+  margin: 4px 0;
+  border: none;
 }
 
 #entry {
-    margin: 0px 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: transparent;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 #entry:selected {
-    margin: 0px 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: #89b4fa;
+  background-color: alpha(#c6a0f6, 0.25);
+}
+
+#text {
+  color: #cad3f5;
+  margin-left: 8px;
+}
+
+#entry:selected #text {
+  color: #f5bde6;
+  font-weight: bold;
 }
