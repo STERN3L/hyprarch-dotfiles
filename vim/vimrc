@@ -23,7 +23,7 @@ map <leader><space> :let @/=''<cr> " clear search
 " Caractères spéciaux d'affichage
 set list
 set listchars=tab:>-,eol:❳
-set listchars=space:-,tab:>-,eol:❳
+set listchars=space:.,tab:>-,eol:❳
 
 " Indentation spécifique pour les fichiers .c et .h
 " set expandtab

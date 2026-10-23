@@ -146,3 +146,30 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Created by `pipx` on 2024-11-09 09:30:31
+export PATH="$PATH:$HOME/.local/bin"
+alias exegol='sudo -E $HOME/.local/bin/exegol'
+
+# Lazy-loaded nvm: sourcing nvm.sh costs ~250 ms per shell.
+# Only the default Node version is added to PATH (path cached on disk);
+# nvm itself is loaded the first time the `nvm` command is used.
+export NVM_DIR="$HOME/.nvm"
+_nvm_bin_cache="$NVM_DIR/.default-bin"
+if [ ! -e "$_nvm_bin_cache" ]; then
+  zsh -fc '. "$NVM_DIR/nvm.sh" && nvm which default 2>/dev/null' | xargs -r dirname > "$_nvm_bin_cache"
+fi
+[ -d "$(<$_nvm_bin_cache)" ] && export PATH="$(<$_nvm_bin_cache):$PATH"
+nvm() {
+  unfunction nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+  nvm "$@"
+  local ret=$?
+  rm -f "$_nvm_bin_cache"  # the default version may have changed: recomputed by the next shell
+  return $ret
+}
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - --no-rehash zsh)"  # --no-rehash saves ~60 ms (run `pyenv rehash` after pip-installing a new command)
