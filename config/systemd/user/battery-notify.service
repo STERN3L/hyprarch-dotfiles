@@ -1,0 +1,6 @@
+[Unit]
+Description=Low-battery desktop notification
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/hypr/scripts/battery-notify.sh
