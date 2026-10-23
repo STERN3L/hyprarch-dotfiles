@@ -1,0 +1,46 @@
+/* Power menu (Super+M) — Catppuccin Macchiato palette, blue/mauve accents */
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: 600;
+  background-image: none;
+  box-shadow: none;
+  transition: all 0.2s ease;
+}
+
+window {
+  background-color: rgba(24, 25, 38, 0.6);
+}
+
+button {
+  color: #a5adcb;
+  font-size: 15px;
+  background-color: rgba(36, 39, 58, 0.92);
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-size: 28%;
+  border: 2px solid #363a4f;
+  border-radius: 18px;
+  margin: 10px;
+  min-width: 180px;
+}
+
+button:focus,
+button:hover {
+  color: #cad3f5;
+  background-color: rgba(54, 58, 79, 0.95);
+  background-size: 32%;
+  border-color: #c6a0f6;
+  outline-style: none;
+}
+
+#reboot:focus, #reboot:hover,
+#logout:focus, #logout:hover { border-color: #8aadf4; }
+#suspend:focus, #suspend:hover { border-color: #b7bdf8; }
+#shutdown:focus, #shutdown:hover { border-color: #ed8796; color: #ed8796; }
+
+#lock     { background-image: url("icons/lock.svg"); }
+#logout   { background-image: url("icons/logout.svg"); }
+#suspend  { background-image: url("icons/suspend.svg"); }
+#reboot   { background-image: url("icons/reboot.svg"); }
+#shutdown { background-image: url("icons/shutdown.svg"); }
